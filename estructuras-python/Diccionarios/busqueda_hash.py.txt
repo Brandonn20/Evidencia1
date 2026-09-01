@@ -1,0 +1,9 @@
+# Base de datos simulada en memoria mediante pares clave-valor
+empleados = {
+    "EMP-001": {"nombre": "Ana Pérez", "cargo": "Desarrolladora"},
+    "EMP-002": {"nombre": "Carlos Gómez", "cargo": "Arquitecto"}
+}
+
+id_buscado = "EMP-001"
+if id_buscado in empleados:
+    print(f"Empleado encontrado en O(1): {empleados[id_buscado]['nombre']}")

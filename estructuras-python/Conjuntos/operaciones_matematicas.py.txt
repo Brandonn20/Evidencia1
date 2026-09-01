@@ -1,0 +1,7 @@
+# Filtrado de elementos únicos e intersección de permisos
+roles_usuario_1 = {"lectura", "escritura", "ejecucion"}
+roles_usuario_2 = {"lectura", "auditoria"}
+
+# Permisos comunes (Intersección)
+permisos_comunes = roles_usuario_1.intersection(roles_usuario_2)
+print("Permisos compartidos (sin duplicados):", permisos_comunes)

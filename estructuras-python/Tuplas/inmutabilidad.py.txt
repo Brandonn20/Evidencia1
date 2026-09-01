@@ -1,0 +1,8 @@
+# Coordenadas geográficas inmutables (Latitud, Longitud)
+ubicacion_estacion = (19.4326, -99.1332)
+
+print("Coordenada original:", ubicacion_estacion)
+try:
+    ubicacion_estacion[0] = 20.0  # Esto generará un error porque las tuplas no cambian
+except TypeError as e:
+    print("Error controlado (demuestra inmutabilidad):", e)

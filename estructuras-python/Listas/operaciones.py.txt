@@ -1,0 +1,6 @@
+# Demostración de mutabilidad y orden en Listas
+tareas_pendientes = ["Analizar requisitos", "Diseñar interfaz"]
+tareas_pendientes.append("Codificar algoritmos")  # Inserción dinámica
+tareas_pendientes.remove("Analizar requisitos")   # Modificación
+
+print("Lista de tareas actuales:", tareas_pendientes)
